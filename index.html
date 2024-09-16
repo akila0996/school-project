@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>school website</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <!-----------SIDE MENU SECTION--------------->
+    <div  id="side-menu" class="side-menu">
+        <button id="closenav" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></button>
+    <ul>
+        <li>Home</li>
+        <li>about</li>
+        <li>skating</li>
+        <li>shop</li>
+        <li>contact us</li>
+    </ul>
+    </div>
+    
+    <!-----------HEADER SECTION--------------->
+    <header class="header">
+        <img src="images/logo.png" alt="logo">
+            <nav class="navbar" id="navmenu">
+                <a href="index.html" class="active">Home</a>
+                <a href="#about">about</a>
+                <a href="#skating">skating</a>
+                <a href="#shop">shop</a>
+                <a href="#contact">contact us</a>
+            </nav>
+            <button onclick="openNav()" class="open-nav" ><i class="fa-solid fa-bars"></i></button>
+        </header>
+       
+    
+    <!-----------BANNER SECTION--------------->
+    <main class="banner-container">
+        <div class="text">
+           <img src="images/top_icon.png">
+           <h1>Skating <br> Board <br> School</h1>
+        </div>
+        <div class="banner-image">
+           <img src="images/banner_img.png">
+       </div>
+       </main>
+     <!-----------CARD SECTION--------------->
+    <section class="skating-card">
+        <h1>Our Skating Class</h1>
+        <p>There are many variations of passages of Lorem</p>
+    <div class="item-blog">
+    <div class="item1" id="card">
+        <img src="images/class1.png">
+        <h2>Skateboard</h2>
+        <p>There are many variations of
+            passages of Lorem Ipsum
+            available, but the majority have
+            suffered alteration There are
+            many variations</p> 
+            <h3>read more</h3>
+    </div>
+    
+    <div class="item2" id="card">
+        <img src="images/class2.png">
+        <h2>Skateboard</h2>
+        <p>There are many variations of
+            passages of Lorem Ipsum
+            available, but the majority have
+            suffered alteration There are
+            many variations</p>
+            <h3>read more</h3>
+    </div>
+    
+    <div class="item3" id="card">
+            <img src="images/class3.png">
+            <h2>Skateboard</h2>
+            <p>There are many variations of
+                passages of Lorem Ipsum
+                available, but the majority have
+                suffered alteration There are
+                many variations</p>
+                <h3>read more</h3>            
+    </div>
+    </div>
+    </section>
+        
+    
+<!----------- JS SCRIPT --------------->
+        <script>
+            function openNav(){
+                document.getElementById("side-menu").style.display="block";
+            }
+            function closeNav(){
+                document.getElementById("side-menu").style.display="none";
+            }
+        </script>
+</body>
+</html>
