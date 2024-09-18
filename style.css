@@ -93,8 +93,8 @@ main.banner-container {
     background-color: #3f0bce;
 }
 .item-blog #card {
-    flex-basis: 370px;
     height: 400px;
+    width: 355px;
     border-radius: 10px;
     margin: 15px;
     line-height: 2;
@@ -116,16 +116,44 @@ main.banner-container {
 }
 #card img {
     position: relative;
-    left: 139px;
-}
-#card {
+    left: 150px;
     padding: 10px;
 }
-#card h2{
+#card p {
     padding: 15px;
 }
 .item-blog h3{
+    color: black;
+    text-transform: uppercase;
+    padding: 25px;
+}
+
+      /*----------ABOUT BANNER CSS---------*/
+      
+.foot-banner{
+    background: url("images/about_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.about-wrap {
+    display: flex;
+    padding-top: 89px;
+}
+.about-content {
+    width: 50%;
     color: white;
+    padding: 99px;
+}
+.about-image {
+    width: 49%;
+}
+.about-content h1{
+    font-size: 45px;
+}
+.about-content p{
+    line-height: 2;
+    margin-top: 30px;
 }
                      /*----------MEDIA QUERY---------*/
 
@@ -153,6 +181,43 @@ main.banner-container {
 .text img{
     margin: auto;
 }
+.item-blog{
+    display: block;
+}
+.item-blog p{
+    margin-bottom: 0;
+}
+#card img{
+    left: 125px;
+}
+.skating-card{
+    padding: 0;
+}
+.skating-card h1 {
+    font-size: 35px;
+}
+.item-blog #card{
+    width: 93%;
+   
+}
+.about-wrap {
+    display: block;
+    padding-top: 0;
+    margin: 1rem;
+}
+.about-content {
+    width: 100%;
+    padding: 0;
+}
+.about-content p {
+    margin-top: 0;
+}
+.about-image {
+    width: 70%;
+}
+.foot-banner {
+    margin: 10px;
+}
  }                   
                         /*----------tablet---------*/
  @media(min-width:601px) and (max-width:767.99px){
@@ -161,13 +226,31 @@ main.banner-container {
     }
     .side-menu{
     width: 40vw;
-    height: 35vh;
+    height: 25vh;
     } 
     .text{
         padding: 0;
     }
     .text h1{
         font-size: 56px;
+    }
+    .item-blog{
+        display: block;
+    }
+    .item-blog #card{
+        width: 95%;
+    }
+    #card img {
+        left: 17rem;
+    }
+    .about-content {
+        padding: 0;
+    }
+    .about-content p {
+        margin-top: 0;
+    }
+    .foot-banner {
+        margin: 10px;
     }
  }
 
@@ -178,7 +261,7 @@ main.banner-container {
     display: none;
 }
 .navbar a {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 nav.navbar {
     margin-right:4rem;
@@ -186,11 +269,36 @@ nav.navbar {
 .text{
     padding: 0;
 }
+#card h2 {
+    padding: 0px;
+}
+#card img{
+    left: 96px;
+}
+main.banner-container {
+    margin-left: 1rem;
+}
+.item-blog #card{
+    width: 90%;
+}
+.about-content {
+    padding: 0;
+}
+.about-content p {
+    margin-top: 0;
+}
+.foot-banner {
+    margin: 10px;
+}
+
  }
 
                           /*----------laptop---------*/
  @media(min-width:993px) and (max-width:2000px){
-    .open-nav{
+    button.open-nav {
         display: none;
+    }
+    .text{
+        padding: 104px;
     }
  }
